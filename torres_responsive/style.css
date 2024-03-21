@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.content-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.8;
+    padding: 20px 50px;
+}
+.content-container p{
+    color: gray;
+}
+
+
+
+.still-have-questions{
+    width: 100%;
+    margin: 40px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: whitesmoke;
+}
+.btn-get-in-touch{
+    background-color: rgb(0, 138, 0);
+    color: white;
+}
+
+
+
+
+
+
+.build-something{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 0;
+    border-top: 1px solid gainsboro;
+}
+
+.build-something h5, .build-row h1{
+    color: rgb(0, 138, 0);;
+}
+
+.ctn-build{
+    width: 100%;
+    display: flex;
+}
+
+.build-row{
+    width: 80%;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.build-row div{
+    margin: 20px;
+}
+
+
+
+
+
+
+
+
+
+.content-form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+}
+.btn{
+    padding: 8px 10px;
+    margin: 20px 5px;
+    border-radius: 3px;
+    border: 1px solid gray;
+}
+.btn-one{
+    background-color: white;
+    color: gray;
+}
+.btn-two{
+    background-color: rgb(0, 138, 0);
+    color: white;
+}
+
+
+
+
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    padding: 0 50px;
+}
+
+.ft-row{
+    margin: 20px 0;
+}
+
+.footer-row-one{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer-row-two{
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid gainsboro;
+    padding: 20px 0;
+}
+
+.footer-container a{
+    text-decoration: none;
+    color: rgb(0, 0, 107);
+}
+
+.footer-container h5{
+    margin: 5px 0;
+    font-weight: normal;
+    color: gray;
+}
+
+.footer-content{
+    display: flex;
+    flex-direction: column;
+}
+
