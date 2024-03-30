@@ -516,10 +516,10 @@ nav li{
     }
     
     .menus{
-        position: fixed;
+        position: absolute;
         top: 70px;
         left: 0;
-        margin: auto;
+        margin: 0 auto;
         height: 100vh;
         width: 100%;
         z-index: 87; 
