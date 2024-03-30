@@ -2,141 +2,499 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ----- font(Inter) ----- -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
     <title>Responsive</title>
 </head>
 <body>
     <div class="main-container">
-        <div class="header-container"></div>
-        <div class="nav-container">
+
+        <header>
+
+            <!-- ----- Navbar Section ----- -->
             <nav>
                 <ul>
-                    <li>Home</li>
-                    <li>Products</li>
-                    <li>Resources</li>
-                    <li>Pricing</li>
+                    <li class="logo">
+                        <img src="./images/logo.svg" alt="">
+                        <p class="logo-txt">HRMS</p>
+                    </li>
+                    <li class="navbar-menus">
+                        <input type="checkbox" id="menubar">
+                        <label class="btn-menubar" for="menubar"><span class="hide-show-icon"></span></label>
+                        <ul class="menus">
+                            <li><a href="">Home</a></li>
+                            <li class="dropdown">
+                                <input type="checkbox" id="products">
+                                <label class="menu-label" for="products">Products<span class="show-icon"></span></label>
+                                <div class="dropdown-content">
+                                    <div class="dropdown-cl1">
+                                        <div class="dropdown-row">
+                                            <img src="./images/blog.svg" alt=""> 
+                                            <div>
+                                                <a href="">Blog</a>
+                                                <p>The latest industry news, updates and info.</p>
+                                            </div>   
+                                        </div>
+                                        <div class="dropdown-row">
+                                            <img src="./images/customer-stories.svg" alt="">
+                                            <div>
+                                                <a href="">Customer stories</a>
+                                                <p>Learn how our customers are making big changes.</p>
+                                            </div>
+                                        </div>
+                                        <div class="dropdown-row">
+                                            <img src="./images/video-tutorials.svg" alt="">
+                                            <div>
+                                                <a href="">Video Tutorials</a>
+                                                <p>Get up and running on new features and techniques.</p>
+                                            </div>
+                                        </div>
+                                        <div class="more-dropdown dropdown-row">
+                                            <img src="./images/documentation.svg" alt="">
+                                            <div>
+                                                <a href="">Documentation</a>
+                                                <p>All the boring stuff that you (hopefully won't) need.</p>
+                                            </div>
+                                        </div>
+                                        <div class="more-dropdown dropdown-row">
+                                            <img src="./images/help.svg" alt="">
+                                            <div>
+                                                <a href="">Help and support</a>
+                                                <p>Learn,fix a problem, and get answers to your questions.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="dropdown-cl2">
+                                        <img class="video-poster" src="./images/video-poster.jpg" alt="">
+                                        <button class="play-icon"><img src="./images/video-play-icon.svg" alt=""></button>
+                                        <h4>We've just released an update!</h4>
+                                        <p>Check out the all new dashboard view. Pages now load faster.</p>
+                                        <div>
+                                            <a href="">Dismiss</a>
+                                            <a class="changelog" href="">Changelog</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="dropdown">
+                                <input type="checkbox" id="resources">
+                                <label class="menu-label" for="resources">Resources<span class="show-icon"></span></label>
+                                <div class="dropdown-content dropdown-resources">
+                                    <div class="dropdown-cl1">
+                                        <div class="dropdown-row">
+                                            <img src="./images/blog.svg" alt=""> 
+                                            <div>
+                                                <a href="">Blog</a>
+                                                <p>The latest industry news, updates and info.</p>
+                                            </div>   
+                                        </div>
+                                        <div class="dropdown-row">
+                                            <img src="./images/customer-stories.svg" alt="">
+                                            <div>
+                                                <a href="">Customer stories</a>
+                                                <p>Learn how our customers are making big changes.</p>
+                                            </div>
+                                        </div>
+                                        <div class="dropdown-row">
+                                            <img src="./images/video-tutorials.svg" alt="">
+                                            <div>
+                                                <a href="">Video Tutorials</a>
+                                                <p>Get up and running on new features and techniques.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="dropdown-cl2">
+                                        <img class="video-poster" src="./images/video-poster.jpg" alt="">
+                                        <button class="play-icon"><img src="./images/video-play-icon.svg" alt=""></button>
+                                        <h4>We've just released an update!</h4>
+                                        <p>Check out the all new dashboard view. Pages now load faster.</p>
+                                        <div>
+                                            <a href="">Dismiss</a>
+                                            <a class="changelog" href="">Changelog</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li><a href="">Pricing</a></li>
+                            <li class="mobile-part">
+                                <div class="useful-links">
+                                    <div class="links-column">
+                                        <a href="">About us</a>
+                                        <a href="">Press</a>
+                                        <a href="">Careers</a>
+                                        <a href="">Legal</a>
+                                    </div>
+                                    <div class="links-column">
+                                        <a href="">Support</a>
+                                        <a href="">Contact</a>
+                                        <a href="">Sitemap</a>
+                                        <a href="">Cookie settings</a>
+                                    </div>
+                                </div>
+                                <form action="">
+                                    <button class="btn btn-two">Sign up</button>
+                                    <button class="btn btn-one">Log in</button>
+                                </form>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="user-avatar">
+                        <input type="checkbox" id="p-menu">
+                        <label class="p-menu" for="p-menu"><div class="avatar"><img class="redf" src="./images/avatar-1.svg" alt=""></div></label>
+                        <div class="profile-menu">
+                            <div class="user">
+                                <div  class="user-status">
+                                    <img src="./images/avatar-1.svg" alt="">
+                                    <span class="active-icon"></span>
+                                </div>
+                                <div>
+                                    <h4>Olivia Rhye</h4>
+                                    <h5>olivia@untitledui.com</h5>
+                                </div>
+                            </div>
+                            <div class="user-menu">
+                                <div class="border">
+                                    <a href="">View profile</a>
+                                    <a href="">Settings</a>
+                                    <a href="">Keyboard shortcuts</a>
+                                </div>
+                                <div class="border">
+                                    <a href="">Company profile</a>
+                                    <a href="">Team</a>
+                                    <a href="">Invite colleagues</a>
+                                </div>
+                                <div class="border">
+                                    <a href="">Changelog</a>
+                                    <a href="">Slack Community</a>
+                                    <a href="">Support</a>
+                                    <a href="">API</a>
+                                </div>
+                                <div class="border">
+                                    <a href="">Logout</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
                 </ul>
             </nav>
-        </div>
+
+            <!-- ----- Feature Section - Header ----- -->
+            <div class="sub-container header-feature">
+                <h5 class="sub-header"><p>New feature</p><a href="">Check out the team dashboard <img src="./images/arrow-forward.svg" alt=""></a></h5>
+                <h1>Beautiful analytics to grow smarter</h1>
+                <h3 class="sub-header-2">Powerful, self-serve product and growth analytics to help you convert, engage, and retain more users. Trusted by over 4,000 startups.</h3>
+                <form class="new">
+                    <a href="#"><button class="btn btn-one"><img src="./images/play-icon.svg" alt="">Demo</button></a>
+                    <a href="#"><button class="btn btn-two">Sign up</button></a>
+                </form>
+                <img class="mac" src="./images/macbook.svg" alt="">
+            </div>
+
+        </header>
+
+
 
         <div class="content-container">
-            <div class="still-have-questions">
-                <h4>Still have questions?</h4>
-                <p>Can't find the answer you're looking for? Please chat to our friendly team.</p>
-                <a href="#"><button class="btn btn-get-in-touch">Get in touch</button></a>
-            </div>
-            <div class="build-something">
-                <div>
-                    <h5>Launch faster</h5>
-                    <h1>Build something great</h1>
-                    <p>We've done all the heavy lifting so you don't have to - get all the data you need to launch and grow your business faster.</p>
+
+            <!-- ----- Features Section 1 ----- -->
+            <div class="sub-container features-section-1">
+                <h5>Join 4,000+ companies already growing</h5>
+                <div class="grid-layout">
+                    <div class="logo-3">
+                        <img src="./images/layers-logo.svg" alt="">
+                        <h3>Layers</h3>
+                    </div>
+                    <div class="logo-3">
+                        <img class="sisyphus-logo" src="./images/sisyphus-logo.svg" alt="">
+                        <h3>Sisyphus</h3>
+                    </div>
+                    <div class="logo-3">
+                        <img src="./images/circooles-logo.svg" alt="">
+                        <h3>Circooles</h3>
+                    </div>
+                    <div class="logo-3">
+                        <img src="./images/catalog-logo.svg" alt="">
+                        <h3>Catalog</h3>
+                    </div>
+                    <div class="logo-3">
+                        <img src="./images/quotient-logo.svg" alt="">
+                        <h3>Quotient</h3>
+                    </div>
+                    <div class="logo-3 hourglass">
+                        <img src="./images/hourglass.svg" alt="">
+                        <h3>Hourglass</h3>
+                    </div>
                 </div>
-                <div class="ctn-build">
-                    <div class="build-column-one">
-                        <div class="build-row buil-row-one">
-                            <div>
-                                <h1>4,000+</h1>
-                                <h4>Global customers</h4>
-                                <p>We've helped over 4,000 amazing global companies</p>
-                            </div>
-                            <div>
-                                <h1>600%</h1>
-                                <h4>Return on investment</h4>
-                                <p>Our costumers have reported an average of ~600% ROI.</p>
-                            </div>
+            </div>
+
+            <!-- ----- Qoute Section ----- -->
+            <div class="sub-container quote-section">
+                <h5 class="sub-header-1">Features</h5>
+                <h1 class="main-header">Analytics that feels like it's from the future</h1>
+                <h3 class="sub-header-2">Powerful, self-serve products and growth analytics to help you convert, engage, and retain more users. Trusted by over 4,000 startups.</h3>
+                <div class="horizontal">
+                    <div class="share">
+                        <img src="./images/icon-1.svg">
+                        <h3>Share team inboxes</h3>
+                        <p>Whether you have a team of 2 or 200, our shared team inboxes keep everyone on the same page and in loop.</p>
+                    </div>
+                    <div class="deliver">
+                        <img src="./images/icon-2.svg">
+                        <h3>Deliver instant answers</h3>
+                        <p>An all-in-one customer service platform that helps you balance everything your customers need to be happy.</p>
+                    </div>
+                    <div class="manage">
+                        <img src="./images/icon-3.svg">
+                        <h3>Manage your team with reports</h3>
+                        <p>Measure what matters with Untitled's easy-to-use reports. You can filter, export, and drilldown on the data in a couple clicks.</p>
+                    </div>
+                    <div class="connect-1">
+                        <img src="./images/icon-4.svg">
+                        <h3>Connect with customers</h3>
+                        <p>Solve a problem or close a sale in real-time with chat. If no one is available, costumers are seamlessly routed to email without confusion.</p>
+                    </div>
+                    <div class="connect-2">
+                        <img src="./images/icon-5.svg">
+                        <h3>Connect the tools you already use</h3>
+                        <p>Explore 100+ integrations that make your day-to-day workflow more effecient and familiar. Plus, our extensive developer tools.</p>
+                    </div>
+                    <div class="diffrence">
+                        <img src="./images/icon-6.svg">
+                        <h3>Our people make the differnece</h3>
+                        <p>We're an extension of your customer service team, and all of our resources are free. Chat to our friendly team 24/7 when you need help.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ----- Features Section 2 ----- -->
+            <div class="sub-container features-section-2">
+
+                <div class="sub-container sisyphus">
+                    <div class="logo-2">
+                        <img src="./images/sisyphus-logo.svg" alt="">
+                        <h3>Sisyphus</h3>
+                    </div>
+                    <h1>We've been using Untitled to kick start every new project and can't imagine working without it.</h1>
+                    <img src="./images/avatar-2.svg" alt="">
+                    <h4>Candice Wu</h4>
+                    <p>Product Manager, Sisyphus</p>
+                </div>
+
+                <div class="sub-container features">
+                    <h5 class="sub-header-1">Features</h5>
+                    <h1 class="main-header">Cutting-edge features for advanced analytics</h1>
+                    <h3 class="sub-header-2">Powerful, self-serve products and growth analytics to help you convert, engage, and retain more users. Trusted by over 4,000 startups.</h3>
+                    <div class="features-imgs">
+                        <img class="img-one iphone" src="./images/iphone-12.svg" alt="">
+                        <img class="img-two" src="./images/screen.svg" alt="">
+                    </div>
+                    <div class="horizontal">
+                        <div class="share">
+                            <img src="./images/icon-1.svg">
+                            <h3>Share team inboxes</h3>
+                            <p>Whether you have a team of 2 or 200, our shared team inboxes keep everyone on the same page and in loop.</p>
+                            <a href="">Learn more <img src="./images/arrow-forward.svg"></a>
                         </div>
-                        <div class="build-row buil-row-two">
-                            <div>
-                                <h1>10K</h1>
-                                <h4>Global downloads</h4>
-                                <p>Our app has been downloaded over 10k times.</p>
-                            </div>
-                            <div>
-                                <h1>200+</h1>
-                                <h4>5-star reviews</h4>
-                                <p>We're proud of our 5-star rating with over 200 reviews.</p>
-                            </div>
+                        <div class="deliver">
+                            <img src="./images/icon-2.svg">
+                            <h3>Deliver instant answers</h3>
+                            <p>An all-in-one customer service platform that helps you balance everything your customers need to be happy.</p>
+                            <a href="">Learn more <img src="./images/arrow-forward.svg"></a>
+                        </div>
+                        <div class="manage">
+                            <img src="./images/icon-3.svg">
+                            <h3>Manage your team with reports</h3>
+                            <p>Measure what matters with Untitled's easy-to-use reports. You can filter, export, and drilldown on the data in a couple clicks.</p>
+                            <a href="">Learn more <img src="./images/arrow-forward.svg"></a>
+                        </div>
+                        <div class="connect-1">
+                            <img src="./images/icon-4.svg">
+                            <h3>Connect with customers</h3>
+                            <p>Solve a problem or close a sale in real-time with chat. If no one is available, costumers are seamlessly routed to email without confusion.</p>
+                            <a href="">Learn more <img src="./images/arrow-forward.svg"></a>
                         </div>
                     </div>
-                    <div></div>
+
                 </div>
+
+                <!-- ----- FAQ Section ----- -->
+                <div class="sub-container faq-section">
+
+                    <h1 class="main-header">Frequently asked questions</h1>
+                    <h3 class="sub-header-2">Everything you need to know about the product and billing.</h3>
+                    <div class="accordion active">
+                        <input type="checkbox" id="q1">
+                        <label for="q1" class="question">Is there a free trial available?<p class="icon"></p></label>
+                        <p class="answer">Yes, you can try us for free for 30 days. If you want, we'll provide you with a free, personalized 30-minute onboarding call to get you up and running as soon as possible.</p>
+                    </div>
+                    <div class="accordion">
+                        <input type="checkbox" id="q2">
+                        <label for="q2" class="question">Can I change my plan later?<p class="icon"></p></label>
+                        <p class="answer">Yes, you can try us for free for 30 days. If you want, we'll provide you with a free, personalized 30-minute onboarding call to get you up and running as soon as possible.</p>
+                    </div>
+                    <div class="accordion">
+                        <input type="checkbox" id="q3">
+                        <label for="q3" class="question">What is your cancellation policy?<p class="icon"></p></label>
+                        <p class="answer">Yes, you can try us for free for 30 days. If you want, we'll provide you with a free, personalized 30-minute onboarding call to get you up and running as soon as possible.</p>
+                    </div>
+                    <div class="accordion">
+                        <input type="checkbox" id="q4">
+                        <label for="q4" class="question">Can other info be added to an invoice?<p class="icon"></p></label>
+                        <p class="answer">Yes, you can try us for free for 30 days. If you want, we'll provide you with a free, personalized 30-minute onboarding call to get you up and running as soon as possible.</p>
+                    </div>
+                    <div class="accordion">
+                        <input type="checkbox" id="q5">
+                        <label for="q5" class="question">How does billing work?<p class="icon"></p></label>
+                        <p class="answer">Yes, you can try us for free for 30 days. If you want, we'll provide you with a free, personalized 30-minute onboarding call to get you up and running as soon as possible.</p>
+                    </div>
+                    <div class="accordion">
+                        <input type="checkbox" id="q6">
+                        <label for="q6" class="question">How do I change my account email?<p class="icon"></p></label>
+                        <p class="answer">Yes, you can try us for free for 30 days. If you want, we'll provide you with a free, personalized 30-minute onboarding call to get you up and running as soon as possible.</p>
+                    </div>
+                    
+                    <div class="still-have-questions">
+                        <div class="avatars">
+                            <img class="img1" src="./images/avatar-3.svg" alt="">
+                            <img class="img2" src="./images/avatar-5.svg" alt="">
+                            <img class="img3" src="./images/avatar-4.svg" alt="">
+                        </div>
+                        <h3 class="still">Still have questions?</h3>
+                        <h3>Can't find the answer you're looking for? Please chat to our friendly team.</h3>
+                        <a href="#"><button class="btn btn-two">Get in touch</button></a>
+                    </div>
+    
+                </div>
+
+                <!-- ----- Metrics Section ----- -->
+                <div class="metrics-section">
+                    <h5 class="sub-header-1">Launch faster</h5>
+                    <h1 class="main-header">Build something great</h1>
+                    <h3 class="sub-header-2">We've done all the heavy lifting so you don't have to - get all the data you need to launch and grow your business faster.</h3>
+                    <div class="metrics-content">
+                        <div class="metrics-column metrics-column-one">
+                            <div class="metrics-row mtr-row-one">
+                                <div>
+                                    <h1>4,000+</h1>
+                                    <h4>Global customers</h4>
+                                    <p>We've helped over 4,000 amazing global companies</p>
+                                </div>
+                                <div>
+                                    <h1>600%</h1>
+                                    <h4>Return on investment</h4>
+                                    <p>Our costumers have reported an average of ~600% ROI.</p>
+                                </div>
+                            </div>
+                            <div class="metrics-row mtr-row-two">
+                                <div>
+                                    <h1>10K</h1>
+                                    <h4>Global downloads</h4>
+                                    <p>Our app has been downloaded over 10k times.</p>
+                                </div>
+                                <div>
+                                    <h1>200+</h1>
+                                    <h4>5-star reviews</h4>
+                                    <p>We're proud of our 5-star rating with over 200 reviews.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="metrics-column metrics-column-two">
+                            <img src="./images/window-image.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ----- CTA Section ----- -->
+                <div class="sub-container cta-section">
+                    <h1 class="main-header">Start your free trial</h1>
+                    <h3 class="sub-header-2">Join over 4,000+ startups already growing with Untitled.</h3>
+                    <form action="">
+                        <a href="#"><button class="btn btn-one">Learn more</button></a>
+                        <a href="#"><button class="btn btn-two">Get started</button></a>
+                    </form>
+                </div>
+
             </div>
-            <div class="content-form">
-                <h1>Start your free trial</h1>
-                <p>Join over 4,000+ startups already growing with Untitled.</p>
-                <form action="">
-                    <a href="#"><button class="btn btn-one">Learn more</button></a>
-                    <a href="#"><button class="btn btn-two">Get started</button></a>
-                </form>
-            </div>
+
         </div>
 
-        <div class="footer-container">
-            <div class="ft-row footer-row-one">
-                <div class="footer-content">
+
+
+        <!-- ----- Features Section 2 ----- -->
+        <footer>
+            <div class="footer-row-one">
+                <div class="footer-links">
                     <h5>Products</h5>
-                    <a href="#">Overview</a>
-                    <a href="#">Features</a>
-                    <a href="#">Solutions</a>
-                    <a href="#">Tutorials</a>
-                    <a href="#">Pricing</a>
-                    <a href="#">Releases</a>
+                    <a href="">Overview</a>
+                    <a href="">Features</a>
+                    <a href="">Solutions <span>New</span></a>
+                    <a href="">Tutorials</a>
+                    <a href="">Pricing</a>
+                    <a href="">Releases</a>
                 </div>
-                <div class="footer-content">
+                <div class="footer-links">
                     <h5>Company</h5>
-                    <a href="#">About us</a>
-                    <a href="#">Careers</a>
-                    <a href="#">Press</a>
-                    <a href="#">News</a>
-                    <a href="#">Media kit</a>
-                    <a href="#">Contact</a>
+                    <a href="">About us</a>
+                    <a href="">Careers</a>
+                    <a href="">Press</a>
+                    <a href="">News</a>
+                    <a href="">Media kit</a>
+                    <a href="">Contact</a>
                 </div>
-                <div class="footer-content">
+                <div class="footer-links">
                     <h5>Resources</h5>
-                    <a href="#">Blog</a>
-                    <a href="#">Newsletter</a>
-                    <a href="#">Events</a>
-                    <a href="#">Help center</a>
-                    <a href="#">Tutorials</a>
-                    <a href="#">Support</a>
+                    <a href="">Blog</a>
+                    <a href="">Newsletter</a>
+                    <a href="">Events</a>
+                    <a href="">Help center</a>
+                    <a href="">Tutorials</a>
+                    <a href="">Support</a>
                 </div>
-                <div class="footer-content">
+                <div class="footer-links">
                     <h5>Use cases</h5>
-                    <a href="#">Startups</a>
-                    <a href="#">Enterprise</a>
-                    <a href="#">Government</a>
-                    <a href="#">SaaS</a>
-                    <a href="#">Marketplaces</a>
-                    <a href="#">Ecommerce</a>
+                    <a href="">Startups</a>
+                    <a href="">Enterprise</a>
+                    <a href="">Government</a>
+                    <a href="">SaaS</a>
+                    <a href="">Marketplaces</a>
+                    <a href="">Ecommerce</a>
                 </div>
-                <div class="footer-content">
+                <div class="footer-links">
                     <h5>Social</h5>
-                    <a href="#">Twitter</a>
-                    <a href="#">LinkedIn</a>
-                    <a href="#">Facebook</a>
-                    <a href="#">GitHub</a>
-                    <a href="#">AngelList</a>
-                    <a href="#">Dribble</a>
+                    <a href="">Twitter</a>
+                    <a href="">LinkedIn</a>
+                    <a href="">Facebook</a>
+                    <a href="">GitHub</a>
+                    <a href="">AngelList</a>
+                    <a href="">Dribble</a>
                 </div>
-                <div class="footer-content">
+                <div class="footer-links">
                     <h5>Legal</h5>
-                    <a href="#">Terms</a>
-                    <a href="#">Privacy</a>
-                    <a href="#">Cookies</a>
-                    <a href="#">Licenses</a>
-                    <a href="#">Settings</a>
-                    <a href="#">Contact</a>
+                    <a href="">Terms</a>
+                    <a href="">Privacy</a>
+                    <a href="">Cookies</a>
+                    <a href="">Licenses</a>
+                    <a href="">Settings</a>
+                    <a href="">Contact</a>
                 </div>
             </div>
-            <div class="ft-row footer-row-two">
-                <div class="logo"></div>
+            <div class="footer-row-two">
+                <div class="logo">
+                    <img src="./images/logo-2.svg" alt="">
+                    <p class="logo-txt">HRMS</p>
+                </div>
                 <div>
-                    <p>©2077 Untitled UI. All rights reserved.</p>
+                    <p>© 2077 Untitled UI. All rights reserved.</p>
                 </div>
             </div>
-        </div>
+        </footer>
+
     </div>
 </body>
 </html>
