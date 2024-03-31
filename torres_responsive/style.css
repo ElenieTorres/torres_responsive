@@ -891,11 +891,12 @@ nav li{
 
 .logo-2 img{
     width: 25px;
-    margin: 0 10px 0 0;
 }
 
 .logo-2 h3{
+    font-size: 25px;
     font-weight: 600;
+    margin: 0 0 0 10px;
 }
 
 .sisyphus h1{
@@ -1003,6 +1004,7 @@ nav li{
 
     .features .horizontal{
         margin: -285px 0 0 0;
+        padding: 55px 0;
         z-index: 6;
         background-color: white;
     }
@@ -1288,7 +1290,7 @@ nav li{
 /* ---------------------------------------------------- */
 
 .cta-section{
-    padding: 70px 0;
+    padding: 70px 5px;
     margin: 20px 0;
     text-align: center;
     background-color: #F9FAFB;
