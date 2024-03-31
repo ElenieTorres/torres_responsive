@@ -747,7 +747,7 @@ nav li{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-gap: 15px;
-    margin: 20px 0;
+    margin: 30px 0 20px 0;
 }
 
 .logo-3{
@@ -762,7 +762,7 @@ nav li{
 }
 
 .sisyphus-logo{
-    width: 20px !important;
+    width: 25px !important;
 }
 
 .hourglass{
