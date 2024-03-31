@@ -52,6 +52,7 @@ body{
     font-size: 15px;
     font-weight: 500;
     padding: 12px 20px;
+    box-sizing: border-box;
     margin: 5px 3px;
     border-radius: 8px;
     box-shadow: rgb(241, 241, 241) 0px 1px 1px 0px;
@@ -1192,6 +1193,7 @@ nav li{
 
 .metrics-section{
     padding: 100px 0 25px 0;
+    box-sizing: border-box;
 }
 
 .metrics-content{
@@ -1221,6 +1223,10 @@ nav li{
     color: #099250;
     font-size: calc(1rem + 2.85vw);
     font-weight: 600;
+}
+
+.metrics-section h3{
+    margin: 20px 0 0 0;
 }
 
 .metrics-content h4{
@@ -1333,12 +1339,13 @@ footer{
     margin: 35px 0;
     display: flex;
     flex-direction: column;
+    box-sizing: border-box;
 }
 
 .footer-row-one{
     display: grid;
     grid-template-columns: repeat(6 , 1fr);
-    grid-gap: 30px;
+    grid-gap: 15px;
     margin: 0 0 50px 0;
 }
 
