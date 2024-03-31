@@ -1084,7 +1084,7 @@ nav li{
 }
 
 .answer{
-    width: 95%;
+    width: 100%;
     display: none;
     margin-bottom: 20px;
 }
@@ -1221,20 +1221,24 @@ nav li{
     margin: 10px;
 }
 
+.metrics-section h3{
+    margin: 20px 0 0 0;
+}
+
 .metrics-content h1{
     color: #099250;
     font-size: calc(1rem + 2.85vw);
     font-weight: 600;
 }
 
-.metrics-section h3{
-    margin: 20px 0 0 0;
-}
-
 .metrics-content h4{
     font-size: calc(1rem + 0.25vw);
     font-weight: 550;
     margin: 15px 0 10px 0;
+}
+
+.metrics-section p{
+    font-size: 16.5px;
 }
 
 .metrics-column-two{
