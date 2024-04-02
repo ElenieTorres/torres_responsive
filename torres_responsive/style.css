@@ -54,8 +54,8 @@ form{
 
 .btn{
     font-family: "Inter", sans-serif;
-    font-size: 15px;
-    font-weight: 500;
+    font-size: 18px;
+    font-weight: normal;
     padding: 12px 20px;
     box-sizing: border-box;
     margin: 5px 3px;
@@ -67,6 +67,7 @@ form{
     background-color: white;
     border: 1px solid #D0D5DD;
     color: #344054;
+    font-weight: 500;
 }
 
 .btn-two{
@@ -668,7 +669,6 @@ nav li{
 }
 
 .new .btn{
-    font-size: 18px;
     padding: 18px 28px;
 }
 
@@ -688,7 +688,6 @@ nav li{
     max-width: 100%;
     min-width: 100%;
     max-height: 100%;
-    /* max-height: 504px; */
     min-height: 100%;
     object-fit: cover;
     object-position: 0 0;
@@ -913,8 +912,8 @@ nav li{
     width: 25px;
 }
 
-.logo-2 h3{
-    font-size: 20px;
+.logo-2 h2{
+    font-size: 25px;
     font-weight: 600;
     margin: 0 0 0 10px;
 }
@@ -1169,20 +1168,20 @@ nav li{
     z-index: 5;
 }
 
-.still{
-    font-weight: 600 !important;
-    color: black !important;
+.still-have-questions h2{
+    font-size: 22px;
+    font-weight: 500;
+    margin: 0 0 10px 0;
 }
 
 .still-have-questions h3{
+    margin: 0 0 30px 0;
     font-weight: normal;
     font-size: 20px;
     color: #667085;
 }
 
-.still-have-questions button{
-    margin: 25px 0;
-}
+
 
 
 
