@@ -47,6 +47,11 @@ body{
     margin: 0 10px;
 }
 
+form{
+    width: 100%;
+    margin: 30px 5px 0 5px;
+}
+
 .btn{
     font-family: "Inter", sans-serif;
     font-size: 15px;
@@ -69,6 +74,8 @@ body{
     border: 1px solid #099250;
     color: white;
 }
+
+
 
 
 
@@ -329,6 +336,7 @@ nav li{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 30px 0 50px 0;
 }
 
 .mobile-part button{
@@ -595,8 +603,8 @@ nav li{
 
 .header-feature{
     margin: 100px 0 80px 0;
-    padding: 0 5px;
     text-align: center;
+    padding: 0 5px;
 }
 
 .header-feature h5{
@@ -679,10 +687,12 @@ nav li{
 .mac{
     max-width: 100%;
     min-width: 100%;
-    max-height: 504px;
+    max-height: 100%;
+    /* max-height: 504px; */
     min-height: 100%;
     object-fit: cover;
     object-position: 0 0;
+    margin: 20px 0 0 0;
 }
 
 
@@ -706,14 +716,21 @@ nav li{
 }
 
 @media screen and (max-width: 625px) {
-    form{
+    form .button-container{
         display: flex;
         flex-direction: column-reverse;
     }
 
-    .btn{
+    .new img{
+        width: 20px;
+        height: 20px;
+    }
+    
+    .button-container .btn{
         width: 100%;
         margin: 10px auto;
+        font-size: 16px;
+        padding: 17px 20px;
     }
 }
 
@@ -810,13 +827,14 @@ nav li{
 .sub-header-1{
     font-size: calc(0.9rem + 0.1vw);
     color: #087443;
+    margin: 0 0 10px 0;
 }
 
 .main-header{
     font-size: calc(1.26rem + 1vw);
     line-height: 1.3;
     font-weight: 600;
-    margin: 10px 0;
+    margin: 0 0 10px 0;
 }
 
 .horizontal{
@@ -1302,7 +1320,7 @@ nav li{
 /* ---------------------------------------------------- */
 
 .cta-section{
-    padding: 70px 5px;
+    padding: 85px 5px;
     margin: 20px 0;
     text-align: center;
     background-color: #F9FAFB;
@@ -1314,19 +1332,6 @@ nav li{
     color: #667085;
 }
 
-form{
-    width: 100%;
-    margin: 30px 5px;
-}
-
-
-
-@media screen and (max-width: 625px) {
-    .cta-section button{
-        font-size: 18px;
-        padding: 18px 28px;
-    }
-}
 
 
 
@@ -1342,7 +1347,7 @@ form{
 
 footer{
     width: 100%;
-    margin: 35px 0;
+    margin: 35px 0 0 0;
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
@@ -1387,7 +1392,7 @@ footer{
     justify-content: space-between;
     align-items: center;
     border-top: 1px solid #EDEFF2;
-    padding: 20px 0;
+    padding: 20px 0 0 0;
 }
 
 .footer-row-two div{
