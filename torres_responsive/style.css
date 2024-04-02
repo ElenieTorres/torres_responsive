@@ -1104,7 +1104,7 @@ nav li{
 }
 
 .faq-container{
-    width: 60%;
+    width: 62%;
 }
 
 .faq-section h1, .faq-section h3{
@@ -1152,7 +1152,7 @@ nav li{
 }
 
 .answer{
-    width: 98%;
+    width: 95%;
     display: none;
     margin-bottom: 20px;
 }
@@ -1241,7 +1241,7 @@ nav li{
         width: 100%;
     }
     .answer{
-        width: 85%;
+        width: 93%;
     }
 }
 
